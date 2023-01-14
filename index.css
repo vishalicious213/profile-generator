@@ -78,29 +78,32 @@ button {
 
 #controls {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 1rem;
-}
-
-#favorites {
-    /* outline: 1px solid red; */
-}
-
-#display {
-    margin-left: 2rem;
+    max-width: 400px;
 }
 
 .favorites-drop-down {
-    /* outline: 1px solid red; */
     display: flex;
     justify-content: space-between;
     width: 17rem;
     margin-bottom: .5rem;
 }
 
-.display-drop-down {
-    width: 13.5rem;
-}
-
 select {
     width: 6.5rem;
+}
+
+@media only screen and (min-width: 560px) {
+    #controls {
+        max-width: 800px;
+    }
+
+    #display {
+        margin-left: 2rem;
+    }
+
+    .display-drop-down {
+        width: 13.5rem;
+    }
 }
