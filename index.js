@@ -1,5 +1,6 @@
 const movieEl = document.getElementById("favorite-movie-genre")
-console.log(movieEl)
+const fruitEl = document.getElementById("favorite-fruit")
+
 
 function setProp(prop, value) {
     document.documentElement.style.setProperty(prop, value)
@@ -78,13 +79,12 @@ movieEl.addEventListener("change", function() {
 
 // watermelon, tomato, banana, orange, avocado, blueberry
 favouriteFruit("regular")
+fruitEl.addEventListener("change", function() {
+    favouriteFruit(fruitEl.value)
+})
 
 // light, dark
 favouriteMode("light")
 
 // sharp, soft, round
 favouriteEdgeStyle("sharp")
-
-movieEl.addEventListener("change", function() {
-    favouriteMovieGenre(movieEl.value)
-})
