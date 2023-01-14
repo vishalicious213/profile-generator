@@ -75,3 +75,7 @@ button {
     font-family: var(--font);
     width: 160px;
 }
+
+#controls {
+    margin-bottom: 1rem;
+}
