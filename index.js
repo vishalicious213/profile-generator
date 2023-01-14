@@ -1,18 +1,5 @@
-// Replace the arguments below according to preference
-
-// space, scary, military, romantic, cowboy, fantasy, superhero
-favouriteMovieGenre("regular")
-
-// watermelon, tomato, banana, orange, avocado, blueberry
-favouriteFruit("regular")
-
-// light, dark
-favouriteMode("light")
-
-// sharp, soft, round
-favouriteEdgeStyle("sharp")
-
-
+const movieEl = document.getElementById("favorite-movie-genre")
+console.log(movieEl)
 
 function setProp(prop, value) {
     document.documentElement.style.setProperty(prop, value)
@@ -80,3 +67,24 @@ function favouriteFruit(theme) {
         setProp('--dark', "#222222")
     } 
 }
+
+// Replace the arguments below according to preference
+
+// space, scary, military, romantic, cowboy, fantasy, superhero
+favouriteMovieGenre("regular")
+movieEl.addEventListener("change", function() {
+    favouriteMovieGenre(movieEl.value)
+})
+
+// watermelon, tomato, banana, orange, avocado, blueberry
+favouriteFruit("regular")
+
+// light, dark
+favouriteMode("light")
+
+// sharp, soft, round
+favouriteEdgeStyle("sharp")
+
+movieEl.addEventListener("change", function() {
+    favouriteMovieGenre(movieEl.value)
+})
