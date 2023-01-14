@@ -82,16 +82,12 @@ button {
     margin-bottom: 1rem;
 }
 
-.favorites-drop-down, .screen-mode-container {
+.favorites-drop-down {
     /* outline: 1px solid red; */
     display: flex;
     justify-content: space-between;
     width: 17rem;
     margin-bottom: .5rem;
-}
-
-.screen-mode-container {
-    align-items: baseline;
 }
 
 select {
