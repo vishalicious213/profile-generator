@@ -1,6 +1,7 @@
 const movieEl = document.getElementById("favorite-movie-genre")
 const fruitEl = document.getElementById("favorite-fruit")
 const screenEl = document.getElementById("screen-mode")
+const edgeEl = document.getElementById("edge-style")
 
 function setProp(prop, value) {
     document.documentElement.style.setProperty(prop, value)
@@ -91,3 +92,6 @@ screenEl.addEventListener("change", function() {
 
 // sharp, soft, round
 favouriteEdgeStyle("sharp")
+edgeEl.addEventListener("change", function() {
+    favouriteEdgeStyle(edgeEl.value)
+})
