@@ -78,8 +78,15 @@ button {
 
 #controls {
     display: flex;
-    flex-direction: column;
     margin-bottom: 1rem;
+}
+
+#favorites {
+    /* outline: 1px solid red; */
+}
+
+#display {
+    margin-left: 2rem;
 }
 
 .favorites-drop-down {
@@ -88,6 +95,10 @@ button {
     justify-content: space-between;
     width: 17rem;
     margin-bottom: .5rem;
+}
+
+.display-drop-down {
+    width: 13.5rem;
 }
 
 select {
