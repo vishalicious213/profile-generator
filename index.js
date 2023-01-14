@@ -1,6 +1,6 @@
 const movieEl = document.getElementById("favorite-movie-genre")
 const fruitEl = document.getElementById("favorite-fruit")
-
+const screenEl = document.getElementById("screen-mode")
 
 function setProp(prop, value) {
     document.documentElement.style.setProperty(prop, value)
@@ -85,6 +85,9 @@ fruitEl.addEventListener("change", function() {
 
 // light, dark
 favouriteMode("light")
+screenEl.addEventListener("change", function() {
+    favouriteMode(screenEl.value)
+})
 
 // sharp, soft, round
 favouriteEdgeStyle("sharp")
