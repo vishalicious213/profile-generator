@@ -82,27 +82,18 @@ button {
     margin-bottom: 1rem;
 }
 
-.favorites-drop-down {
+.favorites-drop-down, .screen-mode-container {
     /* outline: 1px solid red; */
     display: flex;
     justify-content: space-between;
-    width: 16rem;
+    width: 17rem;
     margin-bottom: .5rem;
 }
 
-.screen-mode {
-    outline: 1px solid red;
-    display: flex;
+.screen-mode-container {
     align-items: baseline;
-    width: 10rem;
 }
 
-.screen-mode input {
-    /* outline: 1px solid orange; */
-    margin: .5rem;
-    width: 1.5rem;
-}
-
-.screen-mode label {
-    /* outline: 1px solid green; */
+select {
+    width: 6.5rem;
 }
