@@ -89,3 +89,20 @@ button {
     width: 16rem;
     margin-bottom: .5rem;
 }
+
+.screen-mode {
+    outline: 1px solid red;
+    display: flex;
+    align-items: baseline;
+    width: 10rem;
+}
+
+.screen-mode input {
+    /* outline: 1px solid orange; */
+    margin: .5rem;
+    width: 1.5rem;
+}
+
+.screen-mode label {
+    /* outline: 1px solid green; */
+}
