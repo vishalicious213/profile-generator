@@ -86,7 +86,7 @@ button {
 .favorites-drop-down {
     display: flex;
     justify-content: space-between;
-    width: 17rem;
+    width: 19rem;
     margin-bottom: .5rem;
 }
 
@@ -94,7 +94,7 @@ select {
     width: 6.5rem;
 }
 
-@media only screen and (min-width: 560px) {
+@media only screen and (min-width: 610px) {
     #controls {
         max-width: 800px;
     }
@@ -104,6 +104,6 @@ select {
     }
 
     .display-drop-down {
-        width: 13.5rem;
+        width: 14.5rem;
     }
 }
