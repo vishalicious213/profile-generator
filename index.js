@@ -2,6 +2,9 @@ const movieEl = document.getElementById("favorite-movie-genre")
 const fruitEl = document.getElementById("favorite-fruit")
 const screenEl = document.getElementById("screen-mode")
 const edgeEl = document.getElementById("edge-style")
+const nameEl = document.getElementById("name")
+// const profileForm = document.getElementById("profile-form")
+const setNameEl = document.getElementById("set-name")
 
 function setProp(prop, value) {
     document.documentElement.style.setProperty(prop, value)
@@ -70,7 +73,15 @@ function favouriteFruit(theme) {
     } 
 }
 
-// Replace the arguments below according to preference
+function getName(name) {
+    console.log(name)
+}
+
+function submitForm() {
+    nameEl.textContent = setNameEl.value
+    // event.preventDefault()
+    console.log("Submitted")
+}
 
 // space, scary, military, romantic, cowboy, fantasy, superhero
 favouriteMovieGenre("regular")
@@ -95,3 +106,5 @@ favouriteEdgeStyle("sharp")
 edgeEl.addEventListener("change", function() {
     favouriteEdgeStyle(edgeEl.value)
 })
+
+// nameEl.addEventListener()
