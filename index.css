@@ -33,7 +33,7 @@ body, html {
 }
 
 img {
-    width: 30%;
+    width: 60%;
     border-radius: calc(var(--image) * 2);
     border: 4px solid var(--text);
 }
