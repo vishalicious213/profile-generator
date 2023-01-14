@@ -5,6 +5,8 @@ const edgeEl = document.getElementById("edge-style")
 const nameEl = document.getElementById("name")
 // const profileForm = document.getElementById("profile-form")
 const setNameEl = document.getElementById("set-name")
+const linkedIn = document.getElementById("linkedIn")
+const setLinkedIn = document.getElementById("set-linkedIn")
 
 function setProp(prop, value) {
     document.documentElement.style.setProperty(prop, value)
@@ -73,13 +75,11 @@ function favouriteFruit(theme) {
     } 
 }
 
-function getName(name) {
-    console.log(name)
-}
-
 function submitForm() {
     nameEl.textContent = setNameEl.value
+    linkedIn.href = `https://www.linkedin.com/in/${setLinkedIn.value}`
     // event.preventDefault()
+    console.log(linkedIn.href)
     console.log("Submitted")
 }
 
@@ -107,4 +107,3 @@ edgeEl.addEventListener("change", function() {
     favouriteEdgeStyle(edgeEl.value)
 })
 
-// nameEl.addEventListener()
