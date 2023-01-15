@@ -80,12 +80,18 @@ function favouriteFruit(theme) {
 }
 
 function addFunFact() {
+    // remove old list items (including original HTML list)
+    const oldListItems = document.querySelectorAll("#fun-facts li")
+    oldListItems.forEach(item => item.remove())
+
+    // loop through newFactsArray and append facts to list
     for (let i = 0; i < newFactsArray.length; i++) {
         let factToAdd = document.createElement("li")
         factToAdd.textContent = newFactsArray[i]
         funFacts.appendChild(factToAdd)
     }
 
+    // make the field blank and ready for new input
     newFact.value = ""
 }
 
