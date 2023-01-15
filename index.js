@@ -105,7 +105,13 @@ function submitForm() {
     if (setLinkedIn.value) {
         // linkedIn.href = `https://www.linkedin.com/in/${setLinkedIn.value}`
         // linkedIn.textContent = "LinkedIn here"
-        linkedIn.innerHTML = `<a id="linkedIn" href="${setLinkedIn.value}" target="_blank">LinkedIn here</a>`
+        // linkedIn.innerHTML = `<a id="linkedIn" href="${setLinkedIn.value}" target="_blank">LinkedIn here</a>`
+        let test = document.getElementById("test")
+        let testLI = document.createElement("a")
+        testLI.href = setLinkedIn.value
+        console.log(testLI.href)
+        testLI.textContent = "TEST"
+        test.appendChild(testLI)
     }
 
     if (newFact.value) {
