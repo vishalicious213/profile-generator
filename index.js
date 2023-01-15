@@ -9,6 +9,8 @@ const linkedIn = document.getElementById("linkedIn")
 const setLinkedIn = document.getElementById("set-linkedIn")
 const funFacts = document.getElementById("fun-facts")
 const newFact = document.getElementById("new-fact")
+const pic = document.getElementById("pic")
+const setPic = document.getElementById("set-pic")
 
 let newFactsArray = []
 
@@ -106,8 +108,11 @@ function submitForm() {
 
     if (newFact.value) {
         newFactsArray.push(newFact.value)
-        console.log(newFactsArray)
         addFunFact()
+    }
+
+    if (setPic.value) {
+        pic.src = setPic.value
     }
 }
 
