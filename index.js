@@ -85,12 +85,17 @@ function addFunFact() {
 }
 
 function submitForm() {
-    nameEl.textContent = setNameEl.value
-    linkedIn.href = `https://www.linkedin.com/in/${setLinkedIn.value}`
+    if (setNameEl.value) {
+        nameEl.textContent = setNameEl.value
+    }
+
+    if (setLinkedIn.value) {
+        linkedIn.href = `https://www.linkedin.com/in/${setLinkedIn.value}`
+    }
+
     if (newFact.value) {
         addFunFact()
     }
-    // console.log(linkedIn.href)
 }
 
 // space, scary, military, romantic, cowboy, fantasy, superhero
