@@ -104,7 +104,7 @@ function submitForm() {
 
     // submitted address has to start with https:// (needs protocol)
     if (setLinkedIn.value) {
-        linkedIn.innerHTML = `<a id="linkedIn" href="${setLinkedIn.value}" target="_blank">LinkedIn here</a>`
+        linkedIn.href = `${setLinkedIn.value}`
     }
 
     if (newFact.value) {
