@@ -5,7 +5,7 @@ const edgeEl = document.getElementById("edge-style")
 const nameEl = document.getElementById("name")
 // const profileForm = document.getElementById("profile-form")
 const setNameEl = document.getElementById("set-name")
-const linkedIn = document.getElementById("linkedIn")
+let linkedIn = document.getElementById("linkedIn")
 const setLinkedIn = document.getElementById("set-linkedIn")
 const funFacts = document.getElementById("fun-facts")
 const newFact = document.getElementById("new-fact")
@@ -103,7 +103,9 @@ function submitForm() {
     }
 
     if (setLinkedIn.value) {
-        linkedIn.href = `https://www.linkedin.com/in/${setLinkedIn.value}`
+        // linkedIn.href = `https://www.linkedin.com/in/${setLinkedIn.value}`
+        // linkedIn.textContent = "LinkedIn here"
+        linkedIn.innerHTML = `<a id="linkedIn" href="${setLinkedIn.value}" target="_blank">LinkedIn here</a>`
     }
 
     if (newFact.value) {
