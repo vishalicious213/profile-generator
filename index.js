@@ -7,6 +7,8 @@ const nameEl = document.getElementById("name")
 const setNameEl = document.getElementById("set-name")
 const linkedIn = document.getElementById("linkedIn")
 const setLinkedIn = document.getElementById("set-linkedIn")
+const funFacts = document.getElementById("fun-facts")
+const newFact = document.getElementById("new-fact")
 
 function setProp(prop, value) {
     document.documentElement.style.setProperty(prop, value)
@@ -75,12 +77,20 @@ function favouriteFruit(theme) {
     } 
 }
 
+function addFunFact() {
+    let factToAdd = document.createElement("li")
+    factToAdd.textContent = newFact.value
+    funFacts.appendChild(factToAdd)
+    newFact.value = ""
+}
+
 function submitForm() {
     nameEl.textContent = setNameEl.value
     linkedIn.href = `https://www.linkedin.com/in/${setLinkedIn.value}`
-    // event.preventDefault()
-    console.log(linkedIn.href)
-    console.log("Submitted")
+    if (newFact.value) {
+        addFunFact()
+    }
+    // console.log(linkedIn.href)
 }
 
 // space, scary, military, romantic, cowboy, fantasy, superhero
