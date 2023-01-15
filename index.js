@@ -102,16 +102,9 @@ function submitForm() {
         nameEl.textContent = setNameEl.value
     }
 
+    // submitted address has to start with https:// (needs protocol)
     if (setLinkedIn.value) {
-        // linkedIn.href = `https://www.linkedin.com/in/${setLinkedIn.value}`
-        // linkedIn.textContent = "LinkedIn here"
-        // linkedIn.innerHTML = `<a id="linkedIn" href="${setLinkedIn.value}" target="_blank">LinkedIn here</a>`
-        let test = document.getElementById("test")
-        let testLI = document.createElement("a")
-        testLI.href = setLinkedIn.value
-        console.log(testLI.href)
-        testLI.textContent = "TEST"
-        test.appendChild(testLI)
+        linkedIn.innerHTML = `<a id="linkedIn" href="${setLinkedIn.value}" target="_blank">LinkedIn here</a>`
     }
 
     if (newFact.value) {
