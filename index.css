@@ -44,8 +44,9 @@ a {
 
 input {
     display: block;
-    margin: 20px 0 0;
-    width: 160px;
+    margin: 10px 0;
+    /* width: 160px; */
+    width: 19rem;
     box-sizing: border-box;
     padding: 4px 8px;
     border-width: 1px; 
@@ -94,7 +95,7 @@ select {
     width: 6.5rem;
 }
 
-@media only screen and (min-width: 610px) {
+@media only screen and (min-width: 625px) {
     #controls {
         max-width: 800px;
     }
