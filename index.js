@@ -10,6 +10,8 @@ const setLinkedIn = document.getElementById("set-linkedIn")
 const funFacts = document.getElementById("fun-facts")
 const newFact = document.getElementById("new-fact")
 
+let newFactsArray = []
+
 function setProp(prop, value) {
     document.documentElement.style.setProperty(prop, value)
 }
@@ -78,9 +80,12 @@ function favouriteFruit(theme) {
 }
 
 function addFunFact() {
-    let factToAdd = document.createElement("li")
-    factToAdd.textContent = newFact.value
-    funFacts.appendChild(factToAdd)
+    for (let i = 0; i < newFactsArray.length; i++) {
+        let factToAdd = document.createElement("li")
+        factToAdd.textContent = newFactsArray[i]
+        funFacts.appendChild(factToAdd)
+    }
+
     newFact.value = ""
 }
 
@@ -94,6 +99,8 @@ function submitForm() {
     }
 
     if (newFact.value) {
+        newFactsArray.push(newFact.value)
+        console.log(newFactsArray)
         addFunFact()
     }
 }
