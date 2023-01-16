@@ -87,6 +87,8 @@ button {
     padding: 1rem;
     max-width: 300px;
     box-sizing: border-box;
+    background-color: rgb(235, 235, 235);
+    border-radius: var(--image);
 }
 
 #controls {
@@ -106,4 +108,5 @@ button {
 
 select {
     width: 6.5rem;
+    border-radius: var(--image);
 }
