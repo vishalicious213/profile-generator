@@ -5,7 +5,7 @@ const edgeEl = document.getElementById("edge-style")
 const nameEl = document.getElementById("name")
 
 const setNameEl = document.getElementById("set-name")
-let linkedIn = document.getElementById("linkedIn")
+const linkedIn = document.getElementById("linkedIn")
 const setLinkedIn = document.getElementById("set-linkedIn")
 const funFacts = document.getElementById("fun-facts")
 const newFact = document.getElementById("new-fact")
