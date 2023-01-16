@@ -6,4 +6,27 @@ I made the project interactive and added inputs and event listeners for all of t
 
 The submit button is connected to a function that checks to see which text fields have data in them and only updates the parts of the page associated with that data, so it doesn't wipe out parts of the page that are connected to empty fields.
 
+## JavaScript concepts
+
+- variables
+- arrays
+    - .forEach()
+    - .remove()
+    - .push()
+- if statements
+- if...else statements
+- for loops
+- functions
+- document.getElementById()
+- document.querySelectorAll()
+- document.element.style
+    - .style.setProperty()
+- document.createElement()
+- element.textContent
+- element.appendChild()
+- element.value
+- element.href (for anchor tag)
+- element.src (for image element)
+- element.addEventListener()
+
 Live deploy: https://vish213-profile-generator.netlify.app/
