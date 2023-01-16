@@ -3,7 +3,7 @@ const fruitEl = document.getElementById("favorite-fruit")
 const screenEl = document.getElementById("screen-mode")
 const edgeEl = document.getElementById("edge-style")
 const nameEl = document.getElementById("name")
-// const profileForm = document.getElementById("profile-form")
+
 const setNameEl = document.getElementById("set-name")
 let linkedIn = document.getElementById("linkedIn")
 const setLinkedIn = document.getElementById("set-linkedIn")

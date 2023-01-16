@@ -29,13 +29,19 @@ body, html {
     background: var(--background);
     color: var(--text);
     font-family: var(--font);
+    font-size: .9rem;
     box-sizing: border-box;
 }
 
 img {
-    width: 60%;
+    width: 90%;
+    max-width: 300px;
     border-radius: calc(var(--image) * 2);
     border: 4px solid var(--text);
+}
+
+ul {
+    max-width: 300px;
 }
 
 a {
@@ -45,8 +51,7 @@ a {
 input {
     display: block;
     margin: 10px 0;
-    /* width: 160px; */
-    width: 19rem;
+    width: 18rem;
     box-sizing: border-box;
     padding: 4px 8px;
     border-width: 1px; 
@@ -56,6 +61,7 @@ input {
     background: none;
     border-radius: var(--image);
     font-family: var(--font);
+    font-size: .8rem;
 }
 
 ::placeholder {
@@ -74,37 +80,30 @@ button {
     margin: 8px 0;
     cursor: pointer;
     font-family: var(--font);
-    width: 19rem;
+    width: 18rem;
+}
+
+#interface {
+    padding: 1rem;
+    max-width: 300px;
+    box-sizing: border-box;
 }
 
 #controls {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 1rem;
-    max-width: 400px;
+    max-width: 300px;
 }
 
 .favorites-drop-down {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    width: 19rem;
+    width: 18rem;
     margin-bottom: .5rem;
 }
 
 select {
     width: 6.5rem;
-}
-
-@media only screen and (min-width: 625px) {
-    #controls {
-        max-width: 800px;
-    }
-
-    #display {
-        margin-left: 2rem;
-    }
-
-    .display-drop-down {
-        width: 14.5rem;
-    }
 }
