@@ -1,6 +1,6 @@
 # Profile Generator
 
-This was a static page Scrimba project. The student could manually change the value of the variable being sent into favouriteMovieGenre(), favouriteFruit(), favouriteMode() or favouriteEdgeStyle() to load different CSS presets and change the appearance of the page.
+This was a static page Scrimba project. The student could manually change the value of the variable being sent into favouriteMovieGenre(), favouriteFruit(), favouriteMode() or favouriteEdgeStyle() to load different CSS presets and change the appearance of the page by changing the value directly in the code (hard-coding it).
 
 I made the project interactive and added inputs and event listeners for all of those functions, along with additional functions, so that visitors could select from drop-down lists and change the page's appearance. I also added functions and event listeners so that visitors could change elements on the page to reflect their own name, LinkedIn page profile, picture and add their own "Fun facts about me".
 
