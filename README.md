@@ -29,4 +29,20 @@ The submit button is connected to a function that checks to see which text field
 - element.src (for image element)
 - element.addEventListener()
 
+## CSS concepts
+
+- CSS variables
+- border-radius: calc()
+
+## HTML concepts
+
+- import fonts from Google in head section
+- \<label>
+- \<select>
+- \<option>
+    - selected
+- \<form>
+    - \<input>
+    - \<button>
+
 Live deploy: https://vish213-profile-generator.netlify.app/
